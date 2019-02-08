@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<title> Resume of Zhenjia Ying </title>
+		<script>
+			function getNameEmail() { <!-- creates the function getNameEmail-->
+				var newName = document.getElementById('name').value;
+				var newEmail = document.getElementById('email').value;
+				document.getElementById('obtainName').innerHTML = alert(newName + " - " + newEmail); 
+				<!-- alert above shows the popup with both the name and email -->
+			}
+			
+		</script>
+			<!-- styles the table  --> 
+			<style>
+			table, th, td {
+			border: 1px solid black;<!-- creates one pixel borders for the table -->
+			border-collapse:collapse;
+			}
+			</style>
+			
+			<style>
+				img { width: 100%; }	
+			</style>
+	</head>
+	
+	<body>
+		
+		<h2> Zhenjia Ying </h2> <!-- Name -->
+		<h3 style="background-color:powderblue;"> About Me </h3> <!-- changes the background color to powderblue-->
+		<p> Hi, I'm Zhenjia. I'm a fifth year Geomatics Engineering Student. </p>
+		
+		<img src="Zhenjia.jpg" style="width:200px;height:300px"> <br>
+		
+		<h3 style="background-color:powderblue;"> Courses </h3>
+		<p>This is a summery of some courses I have taken.</p>
+		<!-- Creates the table -->
+		<table>
+		
+			<!-- Creates the headings for the table -->
+			<tr>
+			<th> Course Number </th>
+			<th> Course Title </th>
+			<th> Semester Taken </th>
+			</tr>
+			
+			<tr>
+			<th colspan="3"> Completed </th>
+			</tr>
+			
+			<tr>
+			<th> ESSE 3660 </th>
+			<th> Advanced Field Survey </th>
+			<th> Summer 2018 </th>
+			<tr>
+			
+			<tr>
+			<th> ESSE 3610 </th>
+			<th> Geodetic Concepts </th>
+			<th> Fall 2017 </th>
+			</tr>
+			
+			<tr>
+			<th> ESSE 3620 </th>
+			<th> Adjustment Calculus </th>
+			<th> Fall 2017 </th>
+			</tr>
+			
+			<tr>
+			<th colspan="3"> In Progress </th>
+			</tr>
+			
+			<tr>
+			<th style="color:DodgerBlue;"> ESSE 4600 </th> <!-- changes the color of the words to blue -->
+			<th style="color:DodgerBlue;"> Geographical Information Systems (GIS) and Data Integration </th>
+			<th style="color:DodgerBlue;"> Winter 2019 </th>
+			</tr>
+			
+		</table>
+		
+		<h3 style="background-color:powderblue;"> Interests </h3>
+		<p> I'm interested in <i>JavaScript</i> and <font face="Arial" size="5">Geographical Information Systems.</font> </p>
+		<!-- changes the font for GIS above to Arial, and JavaScript is in italic-->
+		
+		<h3 style="background-color:powderblue;"> Subscribe to Newsletter </h3>
+		<p>Would love to receive newsletter. Enter in your name and email below!</p>
+		
+		Name:<br>
+		<input type="text" id="name"><br> <!-- provides input to enter the name -->
+		Email:<br>
+		<input type="text" id="email"><br> <!-- provides input to enter the email -->
+		<button type="button" onclick="getNameEmail()"> Submit </button><!-- creates the submit button -->
+		
+	</body>
+</html>
